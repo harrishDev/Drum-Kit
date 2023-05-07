@@ -3,6 +3,7 @@
 for(var i=0;i<document.querySelectorAll(".drum").length;i++){
    document.querySelectorAll(".drum")[i].addEventListener("click",function(){
    var buttonInnerHTML = this.innerHTML;
+   makeSound(buttonInnerHTML);
    });
 }
 
@@ -12,6 +13,7 @@ document.addEventListener("keydown",function(event){
    makeSound(event,key);
 
 })
+
 
 function makeSound(key){
    switch (key) {
